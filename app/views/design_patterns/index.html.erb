@@ -1,0 +1,200 @@
+<header class="text-gray-600 body-font" style="background-color: <%= @patterns[0].style_config["title_color"] %>">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <div class="inline-flex items-center justify-center w-14 h-14 rounded-full p-2" style="background-color: <%= @patterns[0].style_config["accent_color"] %> ">
+        <%= image_tag "palettepop.svg", class: "w-12 h-12" %>
+      </div>
+        <span class="ml-3 text-xl" style="color: <%= @patterns[0].style_config["bg_color"] %>">PalettePop</span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <!-- <a class="mr-5 hover:text-gray-900">First Link</a> 
+      <a class="mr-5 hover:text-gray-900">Second Link</a>
+      <a class="mr-5 hover:text-gray-900">Third Link</a>
+      <a class="mr-5 hover:text-gray-900">Fourth Link</a> -->
+    </nav>
+    <%= link_to design_patterns_path do %>
+      <button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md px-6 font-medium " style="background-color: <%= @patterns[0].style_config["bg_color"] %>">
+        <span class="absolute h-0 w-0 rounded-full transition-all duration-300 group-hover:h-50 group-hover:w-46" style="background-color: <%= @patterns[0].style_config["accent_color"] %>;> ">
+        </span>
+        <span class="relative" style="color: <%= @patterns[0].style_config["desc_color"] %>;">
+          もう一度ランダム表示
+        </span>
+      </button>
+    <% end %>
+  </div>
+</header>
+<body class="mb-24" style="background-color: <%= @patterns[0].style_config["bg_color"] %> ">
+
+
+<section class="container mx-auto mt-12">
+    <div class="text-center">
+    <h1 class="<%= @patterns[0].style_config['heading_font'] %> text-3xl" style="color: <%= @patterns[0].style_config["title_color"] %>; ">
+      <%= @patterns[0].name %>
+    </h1>
+  </div>
+</section>
+
+
+<section class="container mx-auto mt-12">
+  <div class="text-center">
+    <h1 class="<%= @patterns[0].style_config['heading_font'] %> pb-5" style="color: <%= @patterns[0].style_config["title_color"] %>; ">color palette</h1>
+  </div>
+  <div class="flex flex-row space-x-4 justify-center"> 
+    <div class="text-center">
+      <div class="w-20 h-20 border" style="background-color: <%= @patterns[0].style_config["bg_color"] %> "> </div>
+      <%= @patterns[0].style_config["bg_color"] %>
+    </div>
+    <div class="text-center">
+      <div class="w-20 h-20 border" style="background-color: <%= @patterns[0].style_config["title_color"] %> "> </div>
+      <%= @patterns[0].style_config["title_color"] %>
+    </div>
+    <div class="text-center">
+      <div class="w-20 h-20 border" style="background-color: <%= @patterns[0].style_config["desc_color"] %> "> </div>
+      <%= @patterns[0].style_config["desc_color"] %>
+    </div>
+    <div class="text-center">
+      <div class="w-20 h-20 border" style="background-color: <%= @patterns[0].style_config["accent_color"] %> "> </div>
+      <%= @patterns[0].style_config["accent_color"] %>
+    </div>
+  </div>
+</section>
+
+
+<section class="container mx-auto mt-12">
+  <div class="text-center">
+    <h1 class="<%= @patterns[0].style_config['heading_font'] %> pb-5" style="color: <%= @patterns[0].style_config["title_color"] %>; ">card</h1>
+  </div>
+  <div class="flex flex-row space-x-4 justify-center">  
+    <div class="w-70 p-6" 
+    style="background-color: <%= @patterns[0].style_config["title_color"] %>;
+            padding: <%= @patterns[0].style_config["padding"] || "1rem" %>;
+            border-radius: <%= @patterns[0].style_config["border_radius"] || "0.5rem" %>;">
+      <h2 class="<%= @patterns[0].style_config["title_font"] %>" style="color: <%= @patterns[0].style_config["bg_color"] %>;">
+        Point1
+      </h2>
+      <p class="<%= @patterns[0].style_config["desc_font"] %>" 
+      style="color: <%= @patterns[0].style_config["bg_color"] %>;">
+        <%= @patterns[0].style_config["point1"] %>
+      </p>
+      <div class="flex justify-end mt-4">
+        <button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md px-6 font-medium " style="background-color: <%= @patterns[0].style_config["bg_color"] %>">
+          <span class="absolute h-0 w-0 rounded-full transition-all duration-300 group-hover:h-56 group-hover:w-32" style="background-color: <%= @patterns[0].style_config["accent_color"] %>;> ">
+          </span>
+          <span class="relative" style="color: <%= @patterns[0].style_config["desc_color"] %>;">
+            Hover me
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="w-70 p-6" 
+    style="background-color: <%= @patterns[0].style_config["title_color"] %>;
+            padding: <%= @patterns[0].style_config["padding"] || "1rem" %>;
+            border-radius: <%= @patterns[0].style_config["border_radius"] || "0.5rem" %>;">
+      <h2 class="<%= @patterns[0].style_config["title_font"] %>" style="color: <%= @patterns[0].style_config["bg_color"] %>;">
+        Point2
+      </h2>
+      <p class="<%= @patterns[0].style_config["desc_font"] %>" 
+      style="color: <%= @patterns[0].style_config["bg_color"] %>;">
+        <%= @patterns[0].style_config["point2"] %>
+      </p>
+      <div class="flex justify-end mt-4">
+        <button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md px-6 font-medium" style="background-color: <%= @patterns[0].style_config["bg_color"] %>">
+          <span class="absolute h-0 w-0 rounded-full transition-all duration-300 group-hover:h-56 group-hover:w-32" style="background-color: <%= @patterns[0].style_config["accent_color"] %>;> ">
+          </span>
+          <span class="relative" style="color: <%= @patterns[0].style_config["desc_color"] %>;">
+            Hover me
+          </span>
+        </button>
+      </div>
+    </div>
+    <div class="w-70 p-6" 
+    style="background-color: <%= @patterns[0].style_config["title_color"] %>;
+            padding: <%= @patterns[0].style_config["padding"] || "1rem" %>;
+            border-radius: <%= @patterns[0].style_config["border_radius"] || "0.5rem" %>;">
+      <h2 class="<%= @patterns[0].style_config["title_font"] %>" style="color: <%= @patterns[0].style_config["bg_color"] %>;">
+        Point3
+      </h2>
+      <p class="<%= @patterns[0].style_config["desc_font"] %>" 
+      style="color: <%= @patterns[0].style_config["bg_color"] %>;">
+        <%= @patterns[0].style_config["point3"] %>
+      </p>
+      <div class="flex justify-end mt-4">
+        <button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md px-6 font-medium " style="background-color: <%= @patterns[0].style_config["bg_color"] %>">
+          <span class="absolute h-0 w-0 rounded-full transition-all duration-300 group-hover:h-56 group-hover:w-32" style="background-color: <%= @patterns[0].style_config["accent_color"] %>;> ">
+          </span>
+          <span class="relative" style="color: <%= @patterns[0].style_config["desc_color"] %>;">
+            Hover me
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container mx-auto mt-12">
+  <div class="text-center">
+    <h1 class="<%= @patterns[0].style_config['heading_font'] %> pb-5" style="color: <%= @patterns[0].style_config["title_color"] %>; ">login form</h1>
+  </div>
+  <div class="flex flex-row space-x-4 justify-center"> 
+    <div class="w-100 p-6" 
+    style="background-color: <%= @patterns[0].style_config["title_color"] %>;
+            padding: <%= @patterns[0].style_config["padding"] || "1rem" %>;
+            border-radius: <%= @patterns[0].style_config["border_radius"] || "0.5rem" %>;">
+                  <label for="name" class="leading-7 text-sm text-gray-600">Email address</label>
+                  <input type="text" id="name" name="name" class="<%= @patterns[0].style_config["form_style"] %>" placeholder="you@site.com">
+                  <label for="message" class="leading-7 text-sm text-gray-600">Password</label>
+                  <input type="text" id="name" name="name" class="<%= @patterns[0].style_config["form_style"] %>" placeholder="password">
+                  
+              <div class="p-2 w-full flex justify-center">
+                <button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md px-6 font-medium " style="background-color: <%= @patterns[0].style_config["bg_color"] %>">
+                  <span class="absolute h-0 w-0 rounded-full transition-all duration-300 group-hover:h-56 group-hover:w-32" style="background-color: <%= @patterns[0].style_config["accent_color"] %>;> ">
+                  </span>
+                  <span class="relative" style="color: <%= @patterns[0].style_config["desc_color"] %>;">
+                    ログイン
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="mx-auto w-full mt-12">
+  <div style="background-color: <%= @patterns[0].style_config["title_color"] %>;
+                padding: <%= @patterns[0].style_config["padding"] || "1rem" %>;
+                border-radius: <%= @patterns[0].style_config["border_radius"] || "0.5rem" %>;">
+    <div class="py-10">
+      <div class="text-center">
+        <h1 class="<%= @patterns[0].style_config['heading_font'] %> pb-5" style="color: <%= @patterns[0].style_config["bg_color"] %>; ">解説</h1>
+      </div>
+      <div class="mx-auto w-full max-w-192">
+        <h2 class="<%= @patterns[0].style_config["title_font"] %>" 
+            style="color: <%= @patterns[0].style_config["bg_color"] %>;">
+          <%= @patterns[0].name %>
+        </h2>
+        <p class="<%= @patterns[0].style_config["desc_font"] %>" 
+          style="color: <%= @patterns[0].style_config["bg_color"] %>;">
+          <%= @patterns[0].notes %>
+            ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説ながーい解説
+        </p>
+      </div>
+    </div>  
+  </div>
+</section>
+
+<div class="flex justify-center mt-8">
+  <%= link_to design_patterns_path do %>
+    <button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md px-6 font-medium " style="background-color: <%= @patterns[0].style_config["title_color"] %>">
+      <span class="absolute h-0 w-0 rounded-full transition-all duration-300 group-hover:h-50 group-hover:w-46" style="background-color: <%= @patterns[0].style_config["accent_color"] %>;> ">
+      </span>
+      <span class="relative" style="color: <%= @patterns[0].style_config["desc_color"] %>;">
+        もう一度ランダム表示
+      </span>
+    </button>
+  <% end %>
+</div>
+
+</body>
