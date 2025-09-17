@@ -1,6 +1,6 @@
 class DesignPatternsController < ApplicationController
   def index
-    @patterns = DesignPattern.order("RANDOM()").limit(3)
+    @patterns = DesignPattern.all
   end
 
   def new
@@ -10,5 +10,6 @@ class DesignPatternsController < ApplicationController
   end
 
   def show
+    @pattern = DesignPattern.find(params[:id])
   end
 end
