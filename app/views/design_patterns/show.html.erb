@@ -197,4 +197,13 @@
   <% end %>
 </div>
 
+<div class="flex justify-center mt-10">
+  <%= link_to "https://twitter.com/intent/tweet?url=#{CGI.escape(design_pattern_url(@pattern))}&text=#{CGI.escape("PalettePopで「#{@pattern.name}」を見つけた！")}&hashtags=PalettePop",
+              target: "_blank", rel: "noopener noreferrer",
+              class: "inline-flex items-center bg-gray-900 px-5 py-3 rounded-full hover:bg-gray-800 transition" do %>
+    <%= image_tag "logo-white.png", alt: "Xで共有", width: 20, height: 20, class: "mr-2" %>
+    <span class="text-white text-xs">Xでシェア！</span>
+  <% end %>
+</div>
+
 </body>
