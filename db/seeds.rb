@@ -28,12 +28,12 @@ DesignPattern.find_or_initialize_by(name: "秋の夜長デザイン").update!(
     "accent_color" => "#E11D48",
     "padding" => "1.5rem",
     "border_radius" => "0.5rem",
-    "point1" => "ポイント１の文章",
-    "point2" => "ポイント２の文章",
-    "point3" => "ポイント３の文章",
+    "point1" => "深いネイビーで夜空を表現",
+    "point2" => "明るい黄色で秋の月明かりを演出",
+    "point3" => "上品なフォントで高級感を出しています",
     "form_style" => "peer py-2.5 sm:py-3 px-4 block w-full border-transparent rounded-lg sm:text-sm focus:border-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-neutral-700 border-transparent text-white focus:ring-neutral-600"
   },
-  notes: "秋の夜長をイメージした落ち着いたデザイン"
+  notes: "秋の夜長をイメージした落ち着いたデザイン。\n深いネイビーとゴールドの組み合わせで高級感を演出。\nアクセントの赤が視線を引き締め、全体のバランスを保ちます。"
 )
 
 DesignPattern.find_or_initialize_by(name: "木枯らしデザイン").update!(
