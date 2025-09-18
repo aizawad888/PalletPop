@@ -189,7 +189,7 @@
 <div class="flex justify-center mt-8">
   <%= link_to random_path, data: { turbo: false }  do %>
     <button class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md px-6 font-medium " style="background-color: <%= @pattern.style_config["desc_color"] %>">
-      <span class="absolute h-0 w-0 rounded-full transition-all duration-300 group-hover:h-50 group-hover:w-60 style="background-color: <%= @pattern.style_config["accent_color"] %>; ">
+      <span class="absolute h-0 w-0 rounded-full transition-all duration-300 group-hover:h-50 group-hover:w-60" style="background-color: <%= @pattern.style_config["accent_color"] %>; ">
       </span>
       <span class="relative" style="color: <%= @pattern.style_config["bg_color"] %>;">
         もう一度ランダム表示
