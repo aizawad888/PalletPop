@@ -1,24 +1,29 @@
-# README
+# palettePop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+このアプリは、秋の雰囲気に合った配色やデザインをランダムで表示させます。
+- ランダムボタンでどんどん配色が切り替わります。
+- 誰でも簡単に秋らしい配色を手に入れることが出来ます。
 
-Things you may want to cover:
+## 使い方
+1. アクセスする
+2. ランダムボタンを押す
+「一覧を見る」で登録されている配色をすべて確認することが出来ます
 
-* Ruby version
+## 開発環境
+- Ruby 3.2.3
+- Rails 7.2.2.2  
+- PostgreSQL 17.6 
+- Node.js 20.19.5
+- Yarn 1.22.22
 
-* System dependencies
+## 開発経緯
+配色を、実際のアプリやWEBサイトで使用することを想定したUIで表現したかったため。
+可愛い配色やトレンド配色を試したり、共有したりしたいと思って開発しました。
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 今後の予定
+- ユーザーによる投稿機能
+- ユーザーログイン機能
+- 実装コードをコピペできる機能
+- 配色をカラーピッカーで自由に編集できる機能
+- ボタン・ナビメニューなどのよく使うサンプルコンポーネントを追加
