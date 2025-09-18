@@ -5,7 +5,7 @@ class Admin::BaseController < ApplicationController
 
   def require_admin
     admin_pass = params[:admin_password] || session[:admin_password]
-    if admin_pass == ENV['ADMIN_PASSWORD']
+    if admin_pass == ENV["ADMIN_PASSWORD"]
       session[:admin_password] = admin_pass
     else
       redirect_to root_path, alert: "管理者パスワードが必要です"
