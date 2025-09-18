@@ -1,0 +1,7 @@
+<h1 class="text-2xl font-bold mb-4"><%= @design_pattern.name %></h1>
+
+<p class="mb-2"><strong>説明:</strong> <%= @design_pattern.notes %></p>
+<p class="mb-2"><strong>スタイル設定:</strong> <%= @design_pattern.style_config %></p>
+
+<%= link_to "編集", edit_admin_design_pattern_path(@design_pattern), class: "text-blue-500" %> |
+<%= link_to "一覧に戻る", admin_design_patterns_path, class: "text-gray-600" %>
